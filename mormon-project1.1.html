@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mormon Webpage Project</title>
+        <link href="mormon-project-css.css" rel="stylesheet"
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>REL Does Social Media</h1>
+                    <p>Webpage by Erica Marie Bennett</p>
+                      
+            </header>
+            <main>
+                <article>
+
+                    <h2>INSTAGRAM RECREATION</h2> 
+                <!-- this is "text box 1" -->
+                        <p>This page will be dedicated to my work on recreating Mormon Mother instagram pages.</p>
+                         <p>I hope to show the difficulty in producing, editing, and posting onto instagram.</p>
+                    <h3>Hello!</h3>
+                    <!-- this is the first photo of me -->
+                        <figure>
+                            <img src="trial1.jpg">
+                        </figure>
+                </article>
+                
+        
+        <!-- got this from https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+        <!-- Container for the image gallery -->
+        <div class="container">
+
+    <!-- Full-width images with number text -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div>
+                <img src="marx.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="napoleon.jpg" style="width:100%">
+            </div>
+                <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="stalin.jpg" style="width:100">
+            </div>
+
+            <!-- buttons for next and previous -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <!-- Image thumbnails -->
+            <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="marx.jpg" style="width:100%" onclick="currentSlide(1)" alt="Marx Love">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="napoleon.jpg" style="width:100%" onclick="currentSlide(2)" alt="Napoleon Love">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="stalin.jpg" style="width:100%" onclick="currentSlide(3)" alt="Stalin Love">
+                </div>
+            </div>
+        </div>
+        </main>
+    <!-- end of gallery -->
+        </div>  
+ 
+    <!-- javascript gallery thing -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+    </body>
+</html>
