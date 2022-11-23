@@ -1,20 +1,20 @@
 body {
     background-size: cover;
-    background-color: #F6B6FF;
+    background-color: rgb(21, 21, 21);
     display: grid;
     grid-template-columns: repeat(10,1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 5px;
-    font-family: 'Nunito', sans-serif;
-
-    
+    font-family: 'Nunito', sans-serif; 
 }
+
 
 header{
     color: antiquewhite;
     grid-row: 1;
     grid-column: 1/11;
     padding-bottom: 0%;
+    padding-top: 0%;
 }
 
 #header-img{
@@ -25,7 +25,6 @@ header{
     padding: auto;
     margin: 0%;
     grid-column: 1/11;
-
 }
 
 #name-box {
@@ -36,170 +35,200 @@ header{
     position: absolute;
     top: 30%;
     left: 50%;
-    transform: translate(-50%, -50%);
-      
+    transform: translate(-50%, -50%);     
 }
 
 #name{
-    color: #A162FF;
-    text-shadow: -1px 1px 2px #000,
+    color: #95ff00;
+    text-shadow: -1px 1px 2px #00ff28,
 				  1px 1px 2px #000,
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
-    font-weight: 600;
     grid-column: 1/11;
     grid-row: 1;
     text-align: center;
-    font-size: 100px;
+    font-size: 150px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: 2%;
+    font-weight: 1000;
 }
 
 #nav-AM{    
-    color: #EC54AD;
+    color: #02FFE1;
     text-align: center;
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
+    text-shadow: -1px 1px 2px #000AFF,
+                1px 1px 2px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
     grid-column: 2/4;
     grid-row: 2;
-    font-size: 30px;
+    font-size: 50px;
     padding-top: 0%;
-    padding-bottom: 0%;
+    padding-bottom: 5%;
+    font-weight: 1000;
 }
 
 #nav-P{    
-    color: #EC54AD;
+    color: #02FFE1;
     text-align: center;
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
+    text-shadow: -1px 1px 2px #000AFF,
+                1px 1px 2px #000,
+                1px -1px 0 #000,
+                -1px -1px 0 #000;
     grid-column: 5/7;
     grid-row: 2;
-    font-size: 30px;
+    font-size: 50px;
     padding-top: 0%;
-    padding-bottom: 0%;
+    padding-bottom: 5%;
+    font-weight: 1000;
 }
 
 #nav-C{    
-    color: #EC54AD;
+    color: #02FFE1;
     text-align: center;
-    text-shadow: -1px 1px 2px #000,
+    text-shadow: -1px 1px 2px #000AFF,
 				  1px 1px 2px #000,
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
     grid-column: 7/11;
     grid-row: 2;
-    font-size: 30px;
+    font-size: 50px;
     padding-top: 0%;
-    padding-bottom: 0%;
+    padding-bottom: 5%;
+    font-weight: 1000;
+}
+
+#gif1{
+    grid-row: 3;
+    grid-column: 1/11;
+    padding-top: 0%;
+    text-align: center;
+    margin-top: 0%;
+    margin: 0%;
+ 
 }
 
 #box2 {
     color:#B98AFF;
     grid-column: 1/11;
-    grid-row: 3;
+    grid-row: 4;
     text-align: center;
-    text-shadow: -1px 1px 2px #000,
+    text-shadow: -1px 1px 2px #6702ff,
 				  1px 1px 2px #000,
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
-    font-size: 40px;
-    background-color: #E577F4;
+    font-size: 65px;
+    padding-top: 10%;
+    margin-bottom: 0%;
+    font-weight: 1000;
 }
 
 #head-shot{
-    color: #EC54AD;
+    color: white;
     grid-column: 1/3;
-    grid-row: 4;
+    grid-row: 5;
     width: 200%;
-    height:auto;
-   background-color: #F6B6FF;
+    height:auto; 
 }
 
 #box3 {
-    color: #EC54AD;
+    color: white;
     grid-column: 5/11;
-    grid-row: 4;
-    font-size: 20px;
+    grid-row: 5;
+    font-size: 26px;
     text-align: left;
-    background-color: #F6B6FF;
     padding-top: 6%;
     padding-right: 3%;
-  
+    text-shadow: -1px 1px 2px #6702ff,
+                1px 1px 2px #6702ff,
+                1px -1px 0 #6702ff,
+                -1px -1px 0 #6702ff;
+
 }
 
 
 #box4 {
-    color:#EC54AD;
+    color:#B98AFF;
     grid-column: 1/11;
-    grid-row: 5;
+    grid-row: 6;
     text-align: center;
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
-    font-size: 40px;
-    background-color: #E577F4;
-
+    text-shadow: -1px 1px 2px #6702ff,
+                1px 1px 2px #6702ff,
+                1px -1px 0 #6702ff,
+                -1px -1px 0 #6702ff;
+    font-size: 60px;
+    padding-top: 10%;
+    margin-bottom: 0%;
+    font-weight: 1000;
 }
 
 #box5{
-    color: #EC54AD;
+    color: white;
     grid-column: 1/7;
-    grid-row: 6;
-    font-size: 20px;
+    grid-row: 7;
+    font-size: 24px;
     text-align: left;
     padding-left: 5%;
+    text-shadow: -1px 1px 2px #6702ff,
+                1px 1px 2px #6702ff,
+                1px -1px 0 #6702ff,
+                -1px -1px 0 #6702ff;
 }
 
 #pod-par{
-    color: #EC54AD;
+    color: white;
     grid-column: 1/7;
-    grid-row: 6;
-    font-size: 20px;
+    grid-row: 7;
+    font-size: 24px;
     text-align: left;
     padding-left: 5%;
-    padding-top: 40%;
+    padding-top: 50%;
+    text-shadow: -1px 1px 2px #6702ff,
+                1px 1px 2px #6702ff,
+                1px -1px 0 #6702ff,
+                -1px -1px 0 #6702ff;
 }
 
 #pod-pic{
     color: #EC54AD;
     grid-column: 7/11;
-    grid-row: 6;
-    width: 70%;
+    grid-row: 7;
+    width: 80%;
     height:auto;
-   background-color: #F6B6FF;
    padding-left: 10%;
    padding-top: 0%;
 }
 
 #player{
     grid-column: 1/7;
-    grid-row: 6;
+    grid-row: 7;
     font-size: 20px;
     text-align: left;
     padding-left: 5%;
-    padding-top: 57%;
+    padding-top: 75%;
+    padding-bottom: 1%;
 }
 
 #box7{
-    color:#EC54AD;
+    color:#B98AFF;
     grid-column: 1/11;
-    grid-row: 8;
+    grid-row: 9;
     text-align: center;
-    text-shadow: -1px 1px 2px #000,
-				  1px 1px 2px #000,
-				  1px -1px 0 #000,
-				  -1px -1px 0 #000;
-    font-size: 40px;
-    background-color: #E577F4;
+    text-shadow: -1px 1px 2px #6702ff,
+				  1px 1px 2px #6702ff,
+				  1px -1px 0 #6702ff,
+				  -1px -1px 0 #6702ff;
+    font-size: 60px;
+    padding-top: 10%;
+    margin-bottom: 0%;
+    font-weight: 1000;
 }
 
 #box-mail{
     color: #EC54AD;
     grid-column: 2/4;
-    grid-row: 9;    
+    grid-row: 10;    
     text-align: center;
     text-shadow: -1px 1px 2px #000,
 				  1px 1px 2px #000,
@@ -213,7 +242,7 @@ header{
 #box-insta{
     color: #EC54AD;
     grid-column: 5/7;
-    grid-row: 9;    
+    grid-row: 10;    
     text-align: center;
     text-shadow: -1px 1px 2px #000,
 				  1px 1px 2px #000,
@@ -226,8 +255,14 @@ header{
 
 #box-twitter{
     color: #EC54AD;
+    text-align: center;
+    text-shadow: -1px 1px 2px #6702ff,
+				  1px 1px 2px #6702ff,
+				  1px -1px 0 #6702ff,
+				  -1px -1px 0 #6702ff;
+    font-size: 24px;
     grid-column: 7/11;
-    grid-row: 9;    
+    grid-row: 10;    
     text-align: center;
     text-shadow: -1px 1px 2px #000,
 				  1px 1px 2px #000,
@@ -239,7 +274,18 @@ header{
 }
 
 footer{
+    color: white;
     grid-column: 1/10;
-    grid-row: 10;
+    grid-row: 12;
     padding-top: 10%;    
+}
+
+#gif2{
+    grid-row: 11;
+    grid-column: 1/11;
+    padding-top: 0%;
+    text-align: center;
+    margin-top: 0%;
+    margin: 0%;
+ 
 }
